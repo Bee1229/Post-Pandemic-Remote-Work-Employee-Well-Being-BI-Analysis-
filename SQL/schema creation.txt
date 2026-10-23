@@ -1,0 +1,5 @@
+create database post_pandemic_health;
+
+create schema RAW;
+create schema STAGING;
+create schema ANALYTICS;
