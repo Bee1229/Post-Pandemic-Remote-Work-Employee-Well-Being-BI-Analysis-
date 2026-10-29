@@ -29,7 +29,7 @@ Questions:
 ## The architecture 
 ```mermaid
 graph TD;
-    CSV DATA /n Survey Dataset --> PYTHON;
+    CSV DATA --> PYTHON;
     PYTHON --> SNOWFLAKE;
     SQL TRANSFORMATION--> ANALYTICAL MODEL;
     ANALYTICAL MODEL--> TABLEAU;
