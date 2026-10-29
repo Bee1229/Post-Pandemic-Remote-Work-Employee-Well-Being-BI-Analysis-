@@ -28,11 +28,34 @@ Questions:
 
 ## The architecture 
 ```mermaid
-graph TD;
-    CSV DATA --> PYTHON;
+flowchart LR
+    CSV["`CSV DATA
+    Survey Dataset`"]
+    PYTHON["`PYTHON
+    Pandas
+    * Data Profiling
+    * Cleaning
+    * Validation`"]
+    SNOWFLAKE["`SNOWFLAKE
+    * Raw Layer
+    * Staging Layer
+    * Analytic Layer`"]
+    SQL["`SQL ANALYSIS
+    * Dimension Tables
+    * Fact Table
+    * KPI calculations`"]
+    ANALYTICAL["`ANALYTICAL MODEL
+    Star Schema`"]
+    TABLEAU["`TABLEAU
+    * Dashboards
+    * Interactive UX`"]
+    INSIGHT["`BUSINESS INSIGHT
+    Recommendations`"]
+    CSV --> PYTHON;
     PYTHON --> SNOWFLAKE;
-    SQL TRANSFORMATION--> ANALYTICAL MODEL;
-    ANALYTICAL MODEL--> TABLEAU;
+    SQL --> ANALYTICAL;
+    ANALYTICAL --> TABLEAU;
+    TABLEAU --> INSIGHT
 ```
 
 ## Business problem
