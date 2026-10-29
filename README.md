@@ -28,7 +28,7 @@ Questions:
 
 ## The architecture 
 ```mermaid
-flowchart LR
+flowchart TD
     CSV["`CSV DATA
     Survey Dataset`"]
     PYTHON["`PYTHON
