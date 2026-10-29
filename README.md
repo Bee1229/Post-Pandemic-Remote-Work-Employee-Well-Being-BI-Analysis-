@@ -72,14 +72,12 @@ Management wants to understand:
 Interested in:
 * burnout
 * mental health
-* employee retention risk
+* multiple physical health risks
 * work-life balance
   
 #### People Managers
 Interested in:
-* workload
 * working hours
-* team well-being
 * social isolation
 
 #### Executive Leadership
