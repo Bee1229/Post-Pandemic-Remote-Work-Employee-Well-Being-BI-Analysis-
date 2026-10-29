@@ -53,6 +53,7 @@ flowchart TD
     Recommendations`"]
     CSV --> PYTHON;
     PYTHON --> SNOWFLAKE;
+    SNOWFLAKE --> SQL
     SQL --> ANALYTICAL;
     ANALYTICAL --> TABLEAU;
     TABLEAU --> INSIGHT
